@@ -43,13 +43,13 @@ Un simulador realista de robot 2D controlado con mando de PS5, desarrollado en G
 
 | Acción | Control | Descripción |
 |--------|---------|-------------|
-| **Acelerar** | R2 | Aceleración progresiva (analógica) |
-| **Reversa** | L2 | Marcha atrás progresiva (analógica) |
+| **Acelerar** | L1+R2 | Aceleración progresiva (analógica) |
+| **Reversa** | L1+L2 | Marcha atrás progresiva (analógica) |
 | **Dirección** | Left Stick | Control de dirección (analógico) |
-| **Subir marcha** | R1 | Cambio ascendente de marchas |
-| **Bajar marcha** | L1 | Cambio descendente de marchas |
-| **Deadman** | X | Botón de seguridad (mantener presionado) |
-| **Cambiar cámara** | △ | Alternar entre modos de cámara |
+| **Subir marcha** | △ | Cambio ascendente de marchas |
+| **Bajar marcha** | X | Cambio descendente de marchas |
+| **Deadman** | L1 | Botón de seguridad (mantener presionado) |
+| **Cambiar cámara** | R3 | Alternar entre modos de cámara |
 
 ## 🚀 Instalación y Uso
 
