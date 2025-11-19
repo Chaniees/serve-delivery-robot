@@ -1,0 +1,60 @@
+# Godot 4+ specific ignores
+*.import/
+export.cfg
+export_presets.cfg
+.godot/
+
+# Godot 3+ specific ignores
+*.translation
+*.remap
+
+# Imported resources (transient)
+*.import
+
+# Mono-specific ignores
+.mono/
+data_*/
+
+# Build outputs
+build/
+export/
+*.apk
+*.aab
+*.x86_64
+*.exe
+
+# System files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Logs and debug files
+*.log
+debug/
+logs/
+
+# Backup files
+*.backup
+*.bak
+
+# Local configuration files
+local.cfg
+user://*/
+
+# Asset creation software files
+*.blend
+*.psd
+*.ai
+*.sketch

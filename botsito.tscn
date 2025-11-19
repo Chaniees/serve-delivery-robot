@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://ddlsc100wn0et"]
+
+[ext_resource type="Script" uid="uid://d005pvdfr4sf1" path="res://robot.gd" id="1_3qksg"]
+[ext_resource type="Texture2D" uid="uid://bv8m7n0utuxbs" path="res://UI.png" id="2_jlye3"]
+[ext_resource type="Texture2D" uid="uid://m2lv1jla5t8y" path="res://Sprites.png" id="3_8lraj"]
+[ext_resource type="PackedScene" uid="uid://jq1533qt48wp" path="res://TUI.tscn" id="4_jlye3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_egpyy"]
+radius = 31.0
+height = 66.0
+
+[node name="Botsito" type="CharacterBody2D"]
+script = ExtResource("1_3qksg")
+hud_path = NodePath("TUI")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+offset_left = -620.0
+offset_top = -534.0
+offset_right = 1300.0
+offset_bottom = 546.0
+texture = ExtResource("2_jlye3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5707964
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_8lraj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 1)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_egpyy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+ignore_rotation = false
+
+[node name="GearLabel" type="Label" parent="."]
+visible = false
+offset_left = -22.0
+offset_top = 53.0
+offset_right = 19.0
+offset_bottom = 76.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SpeedLabel" type="Label" parent="."]
+visible = false
+offset_left = -22.0
+offset_top = 72.0
+offset_right = 18.0
+offset_bottom = 95.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TUI" parent="." instance=ExtResource("4_jlye3")]

@@ -1,0 +1,172 @@
+[gd_scene load_steps=14 format=3 uid="uid://jq1533qt48wp"]
+
+[ext_resource type="Script" uid="uid://bnq7vlrn50qjg" path="res://TUI.gd" id="1_08gl8"]
+[ext_resource type="Texture2D" uid="uid://bv8m7n0utuxbs" path="res://UI.png" id="2_8ts1g"]
+[ext_resource type="Texture2D" uid="uid://d0ve8r8bbdbfl" path="res://PgemBlack.png" id="3_tc3b4"]
+[ext_resource type="Texture2D" uid="uid://m2lv1jla5t8y" path="res://Sprites.png" id="4_8ts1g"]
+[ext_resource type="Texture2D" uid="uid://ci2onvyiue6rj" path="res://P Symbol.png" id="5_tc3b4"]
+[ext_resource type="Texture2D" uid="uid://vhkhq70yfxru" path="res://off duty symbol.png" id="6_fniab"]
+[ext_resource type="Texture2D" uid="uid://cjky65cjq0l23" path="res://wasd.png" id="7_82pw3"]
+[ext_resource type="Texture2D" uid="uid://g32s1ajb0pfw" path="res://addons/shifty.png" id="8_82pw3"]
+[ext_resource type="Texture2D" uid="uid://drqrruxsah68t" path="res://q  y  e.png" id="9_lqwae"]
+[ext_resource type="Texture2D" uid="uid://voaxeqb4jqmx" path="res://c.png" id="10_t1boj"]
+[ext_resource type="PackedScene" uid="uid://o622qqj6y4l" path="res://game_mini_map.tscn" id="11_t1boj"]
+
+[sub_resource type="FontVariation" id="FontVariation_tc3b4"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_l2y8r"]
+viewport_path = NodePath("MinimapViewport")
+
+[node name="TUI" type="CanvasLayer"]
+script = ExtResource("1_08gl8")
+speed_label_path = NodePath("SpeedLabel")
+gear_label_path = NodePath("GearLabel")
+
+[node name="UI" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_8ts1g")
+
+[node name="DeadmanIcon" type="TextureRect" parent="."]
+offset_left = 291.0
+offset_top = 877.0
+offset_right = 991.0
+offset_bottom = 1077.0
+texture = ExtResource("3_tc3b4")
+
+[node name="SpeedLabel" type="Label" parent="."]
+offset_left = 1013.0
+offset_top = 985.0
+offset_right = 1208.0
+offset_bottom = 1052.0
+theme_override_font_sizes/font_size = 48
+text = "0.00 m/s"
+
+[node name="GearLabel" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.16000001
+anchor_top = 0.35500002
+anchor_right = 0.16000001
+anchor_bottom = 0.35500002
+offset_left = 277.8
+offset_top = 557.6
+offset_right = 400.8
+offset_bottom = 607.6
+theme_override_font_sizes/font_size = 36
+text = "Gear: 1"
+
+[node name="Off Duty" type="Label" parent="."]
+offset_left = 1499.0
+offset_top = 449.0
+offset_right = 1848.0
+offset_bottom = 499.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_tc3b4")
+theme_override_font_sizes/font_size = 30
+text = "Off duty"
+
+[node name="Heading to" type="Label" parent="."]
+visible = false
+offset_left = 1344.0
+offset_top = 452.0
+offset_right = 1693.0
+offset_bottom = 502.0
+theme_override_font_sizes/font_size = 30
+text = "Heading to Location"
+
+[node name="Botejemplo" type="TextureRect" parent="."]
+visible = false
+offset_left = 590.0
+offset_top = 448.0
+offset_right = 713.0
+offset_bottom = 571.0
+texture = ExtResource("4_8ts1g")
+expand_mode = 1
+
+[node name="DeadmanImage" type="TextureRect" parent="."]
+offset_left = 394.0
+offset_top = 902.0
+offset_right = 891.0
+offset_bottom = 1044.0
+texture = ExtResource("5_tc3b4")
+expand_mode = 1
+
+[node name="Enrique" type="Label" parent="."]
+offset_left = 94.0
+offset_top = 14.0
+offset_right = 229.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 36
+text = "Enrique"
+
+[node name="ModeloBot" type="Label" parent="."]
+offset_left = 367.0
+offset_top = 26.0
+offset_right = 563.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 24
+text = "s1-9-0-2401"
+
+[node name="Offduty Symbol" type="TextureRect" parent="."]
+offset_left = 218.0
+offset_top = 20.0
+offset_right = 365.0
+offset_bottom = 62.0
+texture = ExtResource("6_fniab")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="wasd" type="TextureRect" parent="."]
+offset_left = 1553.0
+offset_top = 717.0
+offset_right = 1780.0
+offset_bottom = 944.0
+texture = ExtResource("7_82pw3")
+expand_mode = 1
+
+[node name="shift" type="TextureRect" parent="."]
+offset_left = 1333.0
+offset_top = 713.0
+offset_right = 1551.0
+offset_bottom = 931.0
+texture = ExtResource("8_82pw3")
+expand_mode = 1
+
+[node name="gears" type="TextureRect" parent="."]
+offset_left = 1345.0
+offset_top = 533.0
+offset_right = 1544.0
+offset_bottom = 732.0
+texture = ExtResource("9_lqwae")
+expand_mode = 1
+
+[node name="camera mode" type="TextureRect" parent="."]
+offset_left = 1594.0
+offset_top = 532.0
+offset_right = 1803.0
+offset_bottom = 741.0
+texture = ExtResource("10_t1boj")
+expand_mode = 1
+
+[node name="MinimapViewport" type="SubViewport" parent="."]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(3750, 3750)
+
+[node name="GameMiniMap" parent="MinimapViewport" instance=ExtResource("11_t1boj")]
+
+[node name="RobotMini" type="Sprite2D" parent="MinimapViewport"]
+position = Vector2(275.58798, 483.39996)
+scale = Vector2(0.19999999, 0.19999999)
+texture = ExtResource("4_8ts1g")
+
+[node name="MinimapTextureRect" type="TextureRect" parent="."]
+offset_left = 1345.0
+offset_top = 31.0
+offset_right = 1773.0
+offset_bottom = 432.0
+texture = SubResource("ViewportTexture_l2y8r")
+expand_mode = 1

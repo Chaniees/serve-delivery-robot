@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://be45eg4lhsxmf"]
+
+[ext_resource type="Texture2D" uid="uid://fi1a0p0plfbk" path="res://Zona peligrosa.png" id="1_3menk"]
+[ext_resource type="Script" uid="uid://bxkak5fi6hyi8" path="res://zona_red.gd" id="1_rjvnb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3klmp"]
+size = Vector2(3599, 959)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_myh0g"]
+size = Vector2(731, 1224)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4q63i"]
+size = Vector2(1346, 1330)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vnlm"]
+size = Vector2(3138, 787)
+
+[node name="ZonaRed" type="StaticBody2D"]
+script = ExtResource("1_rjvnb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3menk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(143.5, -1025.5)
+shape = SubResource("RectangleShape2D_3klmp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-886, -60)
+shape = SubResource("RectangleShape2D_myh0g")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(1163, -43)
+shape = SubResource("RectangleShape2D_4q63i")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(224, 856)
+shape = SubResource("RectangleShape2D_3vnlm")

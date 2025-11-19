@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://kmouc8ajsp7o"]
+
+[ext_resource type="PackedScene" uid="uid://bqpwuo2a2nji8" path="res://game_map.tscn" id="2_3nce3"]
+[ext_resource type="PackedScene" uid="uid://ddlsc100wn0et" path="res://botsito.tscn" id="4_sbi6o"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(8, -8)
+
+[node name="GameMap" parent="." instance=ExtResource("2_3nce3")]
+scale = Vector2(3, 3)
+
+[node name="Botsito" parent="." instance=ExtResource("4_sbi6o")]
+position = Vector2(1519, 2417)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://o622qqj6y4l"]
+
+[ext_resource type="Texture2D" uid="uid://11a30qly33at" path="res://Mapa Mini base.png" id="1_sxq3f"]
+[ext_resource type="Texture2D" uid="uid://dran57c0yisx6" path="res://pasto mini.png" id="2_yq1id"]
+[ext_resource type="Texture2D" uid="uid://fi1a0p0plfbk" path="res://Zona peligrosa.png" id="3_qghm5"]
+
+[node name="GameMiniMap" type="Node2D"]
+scale = Vector2(2.5, 2.5)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_sxq3f")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_yq1id")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_qghm5")
