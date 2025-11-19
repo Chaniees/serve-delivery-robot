@@ -221,7 +221,9 @@ Especificaciones de tu sistema
 Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para detalles.
 
 👨‍💻 Desarrollo
-Creado por: [Tu Nombre]
+Creado por: Antonio Barush Cervantes Reyes y Christian Ayala Enríquez.
+        **Colaboración:**
+Este proyecto fue desarrollado en equipo combinando habilidades de programación y diseño.
 Versión: 1.0.0
 Godot Version: 4.x
 Última actualización: 2024
